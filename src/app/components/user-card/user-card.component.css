@@ -1,0 +1,38 @@
+.user-card{
+  width: 275px;
+  cursor: pointer;
+  background-color: var(--color-a);
+  border-radius: var(--border-radius);
+  width: 275px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-card:hover {
+  transition: all ease 150ms;
+  opacity: .6;
+}
+
+.user-card div p.no-main{
+  font-size: .75rem;
+}
+.user-card div button{
+  font-size: .7rem;
+  border-radius: var(--border-radius);
+  padding:0.1rem 0.7rem;
+  border: none;
+  background-color: var(--color-4);
+}
+.user-card div button:hover{
+  font-size: .75rem;
+  background-color: var(--color-3);
+}
+
+.profile-picture{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+

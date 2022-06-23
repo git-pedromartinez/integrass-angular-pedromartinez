@@ -1,0 +1,32 @@
+<div class="header">
+  <div class="container header">
+    <div class="header__section">
+      <ul class="header__list">
+        <li class="header__logo">Integrass</li>
+        <li (click)="setSearch([],false)">See all users</li>
+        <li class="search">
+          <form [formGroup]="searchForm">
+            <input
+              class="input-search"
+              type="text"
+              placeholder="Buscar"
+              id="searchService"
+              name="searchService"
+              formControlName="searchService"
+              autocomplete="off"
+            />
+          </form>
+          <img *ngIf="!(searchIsActive$ | async)" src="assets/icons/search-no-active.svg" alt="" style="padding: 1rem;" (click)="startSearch(searchForm.get('searchService')?.value)">
+          <img *ngIf="searchIsActive$ | async"src="assets/icons/search-active.svg" alt="" style="padding: 1rem;" (click)="setSearch([],false)">
+        </li>
+      </ul>
+    </div>
+    <div class="header__section">
+      <ul class="header__list">
+        <li><img src="assets/icons/atm.svg" alt=""></li>
+        <li><img src="assets/icons/bell.svg" alt=""></li>
+        <li><img src="assets/icons/user.svg" alt="" (click)="showInfo()"></li>
+      </ul>
+    </div>
+  </div>
+</div>

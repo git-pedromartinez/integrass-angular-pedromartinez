@@ -1,0 +1,9 @@
+<div class="user-card">
+  <div>
+    <p>{{user.name}}</p>
+    <p class="no-main">{{user.username}}</p>
+    <p class="no-main">{{user.email}}</p>
+    <button (click)="deleteThisUser()">delete</button>
+  </div>
+  <img class="profile-picture" [src]="getProfilePicture(user.id)" alt="">
+</div>

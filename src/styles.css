@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-main);
+}
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 1080px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+:root {
+  --font-family-main: 'Poppins', sans-serif;
+  --color-a: white;
+  --color-b: #434050;
+  --color-1: #54BAB9;
+  --color-2: #18978F;
+  --color-3: #E9DAC1;
+  --color-4: #F7ECDE;
+  --border-radius: 15px;
+  --font-size-1: 1rem;
+  --font-size-2: 1.2rem;
+  --font-size-3: .9rem;
+  --icon-img-1:20px;
+}

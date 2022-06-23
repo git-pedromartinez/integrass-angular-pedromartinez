@@ -1,0 +1,10 @@
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.users app-user-card {
+  padding: 1.5rem;
+}
